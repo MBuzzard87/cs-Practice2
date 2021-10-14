@@ -45,7 +45,36 @@ namespace Practice2
 
             int dimensions = threeDeeArr.Rank;
 
-            Console.WriteLine("The dimensions of threeDeeArr is: ", dimensions);
+            Console.WriteLine("The dimensions of threeDeeArr is: {0}D \n", dimensions);
+
+
+            foreach(int item in twoDeeArr)
+            {
+                Console.Write(item + " ");
+
+            }
+            Console.WriteLine("\n\n***** Even Numbers in twoDeeArr *****");
+            for(int i = 0; i < twoDeeArr.GetLength(0); i++)
+            {
+                for(int j = 0; j < twoDeeArr.GetLength(1); j++)
+                {
+                    if(twoDeeArr[i,j] % 2 == 0)
+                    {
+                        Console.Write(twoDeeArr[i, j] + " ");
+                    } else
+                    {
+                        Console.Write(" ");
+                    }
+                }
+            }
+
+
+            Console.WriteLine("\n\n");
+            for(int i = 0, j = 2; i < twoDeeArr.GetLength(0); i++, j--)
+            {
+                Console.WriteLine(twoDeeArr[i, j]);
+            }
+
 
             Console.ReadKey();
             
