@@ -9,7 +9,7 @@ namespace Practice2
     class Arrays
     {
         
-
+/*
         static void Main(string[] args)
         {
             // declare 2D Array
@@ -78,6 +78,7 @@ namespace Practice2
 
             Console.ReadKey();
             
-        }
+        }*/
     }
+
 }
