@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace Practice2
 {
@@ -20,7 +21,7 @@ namespace Practice2
         static char currentPlayer = 'O';
         static bool game = true;
         static int numTurns = 0;
-        static char win = 'N';
+        static char again = '?';
         
 
 
@@ -38,6 +39,7 @@ namespace Practice2
                 SetField();
                 PlayGame();
 
+                
                 KeepPlaying();
                 
             }
@@ -196,7 +198,7 @@ namespace Practice2
         public static void KeepPlaying()
         {
             
-            if(playField[0,0] == 'O' && playField[0, 1] == 'O' && playField[0, 2] == 'O' || playField[1, 0] == 'O' && playField[1, 1] == 'O' && playField[1, 2] == 'O' ||
+            if (playField[0,0] == 'O' && playField[0, 1] == 'O' && playField[0, 2] == 'O' || playField[1, 0] == 'O' && playField[1, 1] == 'O' && playField[1, 2] == 'O' ||
                 playField[2, 0] == 'O' && playField[2, 1] == 'O' && playField[2, 2] == 'O' || playField[0, 0] == 'O' && playField[1, 0] == 'O' && playField[2, 0] == 'O' ||
                 playField[1, 0] == 'O' && playField[1, 1] == 'O' && playField[1, 2] == 'O' || playField[0, 2] == 'O' && playField[1, 2] == 'O' && playField[2, 2] == 'O' ||
                 playField[0, 0] == 'O' && playField[1, 1] == 'O' && playField[2, 2] == 'O' || playField[0, 2] == 'O' && playField[1, 1] == 'O' && playField[2, 0] == 'O')
@@ -206,10 +208,10 @@ namespace Practice2
                 if (input.Equals("Y"))
                 {
                     numTurns = 0;
-                    win = 'W';
+                    again = 'Y';
                 } else
                 {
-                    win = 'L';
+                    again = 'N';
                 }
 
             }
@@ -222,12 +224,11 @@ namespace Practice2
                 Console.WriteLine("Player 2 wins!!!  Would you like to play again? Please enter Y to continue or hit any key then enter to exit.");
                 string input = Console.ReadLine();
                 if (input.Equals("Y"))
-                {
-                    numTurns = 0;
-                    win = 'W';
+                { 
+                    again = 'Y';
                 } else
                 {
-                    win = 'L';
+                    again = 'N';
                 }
                 
                 
@@ -260,6 +261,7 @@ namespace Practice2
                 if (input.Equals("Y")) {
                     playField = ticTacToe;
                     currentPlayer = 'O';
+                    numTurns = 0;
                 } else
                 {
                     Console.WriteLine("Thank you for playing!!!");
@@ -267,12 +269,14 @@ namespace Practice2
                 }
             }
 
-            if (win.Equals('W'))
+            if (again.Equals('Y'))
             {
                 playField = ticTacToe;
                 currentPlayer = 'O';
+                again = '?';
+                numTurns = 0;
                 
-            } else if(win.Equals('L'))
+            } else if(again.Equals('N'))
             {
                 Console.WriteLine("Thank you for playing!!!");
                 startOver = false;
