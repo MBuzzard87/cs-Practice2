@@ -1,0 +1,7 @@
+C:\Users\Buzz\Desktop\VS2019\practice2\Practice2\Practice2\bin\Debug\Practice2.exe.config
+C:\Users\Buzz\Desktop\VS2019\practice2\Practice2\Practice2\bin\Debug\Practice2.exe
+C:\Users\Buzz\Desktop\VS2019\practice2\Practice2\Practice2\bin\Debug\Practice2.pdb
+C:\Users\Buzz\Desktop\VS2019\practice2\Practice2\Practice2\obj\Debug\Practice2.csprojAssemblyReference.cache
+C:\Users\Buzz\Desktop\VS2019\practice2\Practice2\Practice2\obj\Debug\Practice2.csproj.CoreCompileInputs.cache
+C:\Users\Buzz\Desktop\VS2019\practice2\Practice2\Practice2\obj\Debug\Practice2.exe
+C:\Users\Buzz\Desktop\VS2019\practice2\Practice2\Practice2\obj\Debug\Practice2.pdb

@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Practice2
 {
     class JaggedArray
     {
 
-
+/*
         static void Main(string[] args)
         {
 
@@ -27,15 +23,20 @@ namespace Practice2
             jaggedArr[2] = new int[] { 1, 2};
 
 
+            int[] addToJaggedArr = { 2, 3, 4, 5, 6, 7 };
+
+
             // declare and initialize
             int[][] jaggedArr2 = new int[][]
             {
                 new int[] {1,2,3,4,5},
-                new int[] {15,2}
+                new int[] {15,2},
+                addToJaggedArr
             };
 
             Console.WriteLine("The value in the center of the first array of jaggedArr2 is: {0}.\n" +
-                "The value of the first number in the second array of jaggedArr2 is: {1}\n\n", jaggedArr2[0][2], jaggedArr2[1][0]);
+                "The value of the first number in the second array of jaggedArr2 is: {1}\n" +
+                "The last value in addToJaggedArr is: {2}\n\n", jaggedArr2[0][2], jaggedArr2[1][0], jaggedArr2[2][5]);
 
             for(int i = 0; i < jaggedArr2.Length; i++)
             {
@@ -55,7 +56,7 @@ namespace Practice2
         }
 
 
-
+*/
 
     }
 }
