@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Arrays.cs" />
     <Compile Include="Challenge1.cs" />
+    <Compile Include="JaggedArray.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TicTacToe.cs" />

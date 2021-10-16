@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Threading;
 
 namespace Practice2
 {
@@ -24,7 +19,7 @@ namespace Practice2
         static char again = '?';
         
 
-
+/*
         static void Main(string[] args)
         {
 
@@ -46,7 +41,7 @@ namespace Practice2
             
             Console.ReadKey();
         }
-
+*/
         public static void SetField()
         {
             Console.WriteLine("       |       |       ");
@@ -197,13 +192,15 @@ namespace Practice2
 
         public static void KeepPlaying()
         {
-            
+           
             if (playField[0,0] == 'O' && playField[0, 1] == 'O' && playField[0, 2] == 'O' || playField[1, 0] == 'O' && playField[1, 1] == 'O' && playField[1, 2] == 'O' ||
                 playField[2, 0] == 'O' && playField[2, 1] == 'O' && playField[2, 2] == 'O' || playField[0, 0] == 'O' && playField[1, 0] == 'O' && playField[2, 0] == 'O' ||
                 playField[1, 0] == 'O' && playField[1, 1] == 'O' && playField[1, 2] == 'O' || playField[0, 2] == 'O' && playField[1, 2] == 'O' && playField[2, 2] == 'O' ||
                 playField[0, 0] == 'O' && playField[1, 1] == 'O' && playField[2, 2] == 'O' || playField[0, 2] == 'O' && playField[1, 1] == 'O' && playField[2, 0] == 'O')
             {
-                Console.WriteLine("Player 1 wins!!! Would you like to play again? Please enter Y to continue or hit any key then enter to exit.");
+                Console.Clear();
+                SetField();
+                Console.WriteLine("\nPlayer 1 wins!!! Would you like to play again? Please enter Y to continue or hit any key then enter to exit.");
                 string input = Console.ReadLine();
                 if (input.Equals("Y"))
                 {
@@ -221,7 +218,9 @@ namespace Practice2
                 playField[1, 0] == 'X' && playField[1, 1] == 'X' && playField[1, 2] == 'X' || playField[0, 2] == 'X' && playField[1, 2] == 'X' && playField[2, 2] == 'X' ||
                 playField[0, 0] == 'X' && playField[1, 1] == 'X' && playField[2, 2] == 'X' || playField[0, 2] == 'X' && playField[1, 1] == 'X' && playField[2, 0] == 'X')
             {
-                Console.WriteLine("Player 2 wins!!!  Would you like to play again? Please enter Y to continue or hit any key then enter to exit.");
+                Console.Clear();
+                SetField();
+                Console.WriteLine("\nPlayer 2 wins!!!  Would you like to play again? Please enter Y to continue or hit any key then enter to exit.");
                 string input = Console.ReadLine();
                 if (input.Equals("Y"))
                 { 
