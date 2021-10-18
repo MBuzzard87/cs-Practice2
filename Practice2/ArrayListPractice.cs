@@ -8,7 +8,7 @@ namespace Practice2
     {
        
 
-
+/*
         static void Main(string[] args)
         {
             // declaring an ArrayList
@@ -49,6 +49,6 @@ namespace Practice2
             Console.ReadKey();
         }
 
-
+*/
     }
 }
