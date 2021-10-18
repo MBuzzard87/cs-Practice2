@@ -17,6 +17,37 @@ namespace Practice2
         
         static void Main(string[] args)
         {
+            Hashtable sTable = new Hashtable();
+            Student[] students =
+            {
+                new Student(1, "Michael", 93),
+                new Student(3, "Susan", 92),
+                new Student(5, "Dave", 91),
+                new Student(1, "Joe", 95),
+                new Student(4, "Karen", 90)
+            };
+
+            foreach(Student s in students)
+            {
+                if(!sTable.ContainsKey(s.Id))
+                {
+                    sTable.Add(s.Id,s);
+                    Console.WriteLine("Student with ID: {0} was added", s.Id);
+                } else
+                {
+                    Console.WriteLine("Student with ID: {0} already exists", s.Id);
+                }
+            }
+
+            foreach (Student value in sTable.Values)
+            {
+
+                Console.WriteLine("Student ID: {0} \nName: {1} \nGPA: {2}\n\n", value.Id, value.Name, value.GPA);
+            }
+
+
+
+
             Hashtable studentsTable = new Hashtable();
 
             Student stud1 = new Student(1, "Mike", 90);
@@ -32,7 +63,7 @@ namespace Practice2
 
             Student storedStudent1 = (Student)studentsTable[stud1.Id];
 
-
+/*
             foreach(DictionaryEntry entry in studentsTable)
             {
                 Student temp = (Student)entry.Value;
@@ -47,7 +78,7 @@ namespace Practice2
 
 
             Console.WriteLine("Student ID: {0} \nName: {1} \nGPA: {2}", storedStudent1.Id, storedStudent1.Name, storedStudent1.GPA);
-
+*/
             Console.ReadKey();
 
         }
