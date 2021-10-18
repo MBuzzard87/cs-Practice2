@@ -8,7 +8,7 @@ namespace Practice2
 {
     class MinimumVall
     {
-
+/*
         static void Main(string[] args)
         {
             int minNum = MinVal(1, 2, 3, 4, 100, -2);
@@ -16,7 +16,7 @@ namespace Practice2
             Console.ReadKey();
         }
 
-
+*/
         public static int MinVal(params int[] numbers)
         {
             int min = int.MaxValue;
