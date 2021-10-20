@@ -86,6 +86,8 @@ namespace Practice2
 
             }
 
+            Console.WriteLine("There are {0} employees a BuzzCorp",myEmpDictionary.Count);
+
             if(myEmpDictionary.Remove(keyToUpdate))
             {
                 Console.WriteLine("Employee removed");
@@ -103,7 +105,7 @@ namespace Practice2
             }
 
 
-
+            Console.WriteLine("There are {0} employees a BuzzCorp", myEmpDictionary.Count);
 
 
 

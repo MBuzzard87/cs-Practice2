@@ -12,7 +12,11 @@ namespace Practice2
         static void Main(string[] args)
         {
 
-            DictionaryPractice dp = new DictionaryPractice();
+            // DictionaryPractice dp = new DictionaryPractice();
+
+            // StackDemo sd = new StackDemo();
+
+            QueueDemo qd = new QueueDemo();
             Console.ReadKey();
         }
         
