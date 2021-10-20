@@ -14,7 +14,7 @@ namespace Practice2
     class HashTablePractice
     {
         
-        
+  /*
         static void Main(string[] args)
         {
             Hashtable sTable = new Hashtable();
@@ -63,7 +63,7 @@ namespace Practice2
 
             Student storedStudent1 = (Student)studentsTable[stud1.Id];
 
-/*
+
             foreach(DictionaryEntry entry in studentsTable)
             {
                 Student temp = (Student)entry.Value;
@@ -78,12 +78,12 @@ namespace Practice2
 
 
             Console.WriteLine("Student ID: {0} \nName: {1} \nGPA: {2}", storedStudent1.Id, storedStudent1.Name, storedStudent1.GPA);
-*/
-            Console.ReadKey();
 
+            Console.ReadKey();
+*/
         }
 
-
+    
 
     }
 
@@ -109,4 +109,4 @@ namespace Practice2
 
     }
 
-}
+

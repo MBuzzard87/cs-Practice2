@@ -8,12 +8,13 @@ namespace Practice2
 {
     class Program
     {
-        /*
+        
         static void Main(string[] args)
         {
-            
 
+            DictionaryPractice dp = new DictionaryPractice();
+            Console.ReadKey();
         }
-        */
+        
     }
 }

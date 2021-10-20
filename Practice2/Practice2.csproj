@@ -46,6 +46,8 @@
     <Compile Include="Arrays.cs" />
     <Compile Include="Challenge1.cs" />
     <Compile Include="ArrayListPractice.cs" />
+    <Compile Include="DictionaryPractice.cs" />
+    <Compile Include="HashTablePractice.cs" />
     <Compile Include="JaggedArray.cs" />
     <Compile Include="MinimumVall.cs" />
     <Compile Include="Params.cs" />
