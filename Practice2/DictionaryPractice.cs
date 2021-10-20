@@ -61,6 +61,20 @@ namespace Practice2
                 Console.WriteLine("That position does not exist");
             }
 
+            Console.WriteLine("\n");
+            for (int i = 0; i < myEmpDictionary.Count; i++)
+            {
+                KeyValuePair<string, Employee> keyValuePair = myEmpDictionary.ElementAt(i);
+
+                Console.WriteLine("Key: {0}", keyValuePair.Key);
+
+                Employee empVal = keyValuePair.Value;
+                Console.WriteLine("Employee Name: {0}, Position: {1}, Age: {2}\n", empVal.Name, empVal.Position, empVal.Age);
+
+
+
+            }
+
 
 
 
