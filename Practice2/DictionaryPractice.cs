@@ -39,8 +39,8 @@ namespace Practice2
                 myEmpDictionary.Add(e.Position, e);
             }
             Employee result = null;
-            string key1 = "CTO";
-            string key2 = "HR";
+            string key1 = "CEO";
+            string key2 = "Hr";
             if(myEmpDictionary.ContainsKey(key1))
             {
                 Employee emp = myEmpDictionary[key1];
@@ -61,12 +61,23 @@ namespace Practice2
                 Console.WriteLine("That position does not exist");
             }
 
+            string keyToUpdate = "CEO";
+            if(myEmpDictionary.ContainsKey(keyToUpdate))
+            {
+                myEmpDictionary[keyToUpdate] = new Employee("Software Developer", "Michael", 35);
+                Console.WriteLine("Employee updated!!!");
+            } else
+            {
+                Console.WriteLine("No employee found with key");
+            }
+
+
             Console.WriteLine("\n");
             for (int i = 0; i < myEmpDictionary.Count; i++)
             {
                 KeyValuePair<string, Employee> keyValuePair = myEmpDictionary.ElementAt(i);
 
-                Console.WriteLine("Key: {0}", keyValuePair.Key);
+                Console.WriteLine("Key: {0} is at position {1}", keyValuePair.Key, i);
 
                 Employee empVal = keyValuePair.Value;
                 Console.WriteLine("Employee Name: {0}, Position: {1}, Age: {2}\n", empVal.Name, empVal.Position, empVal.Age);
@@ -74,6 +85,23 @@ namespace Practice2
 
 
             }
+
+            if(myEmpDictionary.Remove(keyToUpdate))
+            {
+                Console.WriteLine("Employee removed");
+            } else
+            {
+                Console.WriteLine("No employee found");
+            }
+
+            if(myEmpDictionary.ContainsKey(keyToUpdate))
+            {
+                Console.WriteLine("Why is this employee still here?");
+            } else
+            {
+                Console.WriteLine("He was fired last week");
+            }
+
 
 
 
