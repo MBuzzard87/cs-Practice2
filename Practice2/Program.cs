@@ -16,7 +16,11 @@ namespace Practice2
 
             // StackDemo sd = new StackDemo();
 
-            QueueDemo qd = new QueueDemo();
+            // QueueDemo qd = new QueueDemo();
+
+            Debugging debug = new Debugging();
+
+
             Console.ReadKey();
         }
         
