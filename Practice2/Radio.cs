@@ -6,34 +6,20 @@ using System.Threading.Tasks;
 
 namespace Practice2
 {
-    class Radio
+    class Radio:ElectricalDevice
     {
 
-        public bool IsOn { get; set; }
-
-        public string Brand { get; set; }
-
-        public Radio(bool isOn,string brand)
+        public Radio(bool isOn,string brand):base(isOn,brand)
         {
-            IsOn = isOn;
-            Brand = brand;
+         
         }
 
-        public void SwitchOn()
-        {
-            IsOn = true;
-        }
-
-        public void SwitchOff()
-        {
-            IsOn = false;
-        }
 
         public void ListenRadio()
         {
             if(IsOn)
             {
-                Console.WriteLine("Listening to the radio");
+                Console.WriteLine("Listening to the {0} radio",Brand);
             } else
             {
                 Console.WriteLine("Radio is switched off");

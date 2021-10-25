@@ -1,32 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Practice2
 {
-    class TV
+    //  Colon = extend
+    class TV : ElectricalDevice
     {
-        public bool IsOn { get; set; }
+        
 
-        public string Brand { get; set; }
-
-        public TV(bool isOn, string brand)
+        public TV(bool isOn, string brand):base(isOn,brand)
         {
-            IsOn = isOn;
-            Brand = brand;
+       
         }
 
-        public void SwitchOn()
-        {
-            IsOn = true;
-        }
-
-        public void SwitchOff()
-        {
-            IsOn = false;
-        }
 
         public void WatchTV()
         {

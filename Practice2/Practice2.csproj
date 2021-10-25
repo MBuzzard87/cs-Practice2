@@ -48,6 +48,7 @@
     <Compile Include="ArrayListPractice.cs" />
     <Compile Include="Debugging.cs" />
     <Compile Include="DictionaryPractice.cs" />
+    <Compile Include="ElectricalDevice.cs" />
     <Compile Include="HashTablePractice.cs" />
     <Compile Include="JaggedArray.cs" />
     <Compile Include="MinimumVall.cs" />

@@ -18,7 +18,13 @@ namespace Practice2
 
             // QueueDemo qd = new QueueDemo();
 
-            Debugging debug = new Debugging();
+            // Debugging debug = new Debugging();
+
+            Radio radio = new Radio(true, "Sony");
+            radio.ListenRadio();
+            radio.SwitchOff();
+            radio.ListenRadio();
+
 
 
             Console.ReadKey();
