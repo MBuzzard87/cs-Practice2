@@ -13,7 +13,7 @@ namespace Practice2
         public Debugging()
         {
             var friends = new List<string> { "Frank", "Mike", "Munir", "Christian", "Deon", "Christine", "Christopher" };
-            var partyFriends = GetPartyFriends(friends, 4);
+            var partyFriends = GetPartyFriends(friends, 19);
 
             foreach(var name in partyFriends)
             {
@@ -25,7 +25,7 @@ namespace Practice2
         {
             var partyFriends = new List<string>();
 
-            while(partyFriends.Count < count)
+            while(partyFriends.Count < count && list.Count > count)
             {
                 var currentFriend = GetPartyFriend(list);
                 partyFriends.Add(currentFriend);
